@@ -120,3 +120,29 @@ def test_incoorect_values(driver):
     txt1 = invalidUsername.text
     assert "Your first name contains invalid characters." == txt1
 
+def test_search_product(driver):
+    driver.get('https://www.etsy.com/')
+    driver.maximize_window()
+    # driver.find_element(By.CSS_SELECTOR, "#gnav-header-inner > div.wt-flex-shrink-xs-0 > nav > ul > li:nth-child(1) > button").click()
+    # time.sleep(2)
+    # driver.find_element(By.CSS_SELECTOR, "#join_neu_email_field").send_keys("amar.ba@gmail.com")
+    # driver.find_element(By.CSS_SELECTOR, "#join_neu_password_field").send_keys("12345678@")
+    # time.sleep(2)
+    # driver.find_element(By.CSS_SELECTOR,"#join-neu-form > div.wt-grid.wt-grid--block > div > div:nth-child(10) > div > button").click()
+    # time.sleep(2)
+    element = driver.find_element(By.ID, "catnav-primary-link-10923")
+    actions = ActionChains(driver)
+    actions.move_to_element(element).perform()
+    time.sleep(5)
+    driver.find_element(By.ID, "catnav-l4-10927").click()
+    time.sleep(2)
+    driver.find_element(By.CSS_SELECTOR, ".wt-block-grid__item:nth-child(1) .wt-circle").click()
+    name= driver.find_element(By.CSS_SELECTOR,"#content > div > div.wt-bg-white.wt-grid__item-md-12.wt-pl-xs-1.wt-pr-xs-0.wt-pr-md-1.wt-pl-lg-0.wt-pr-lg-0.wt-mt-xs-0.wt-overflow-x-hidden.wt-bb-xs-1 > div > div.wt-mt-xs-2.wt-text-black > div.wt-grid.wt-pl-xs-0.wt-pr-xs-1.search-listings-group > div:nth-child(2) > div.wt-bg-white.wt-display-block.wt-pb-xs-2.wt-mt-xs-0 > div > div > div > ul > li:nth-child(1) > div > div > a > div.v2-listing-card__info > div > h2")
+    txt=name.text
+    time.sleep(2)
+    driver.find_element(By.CSS_SELECTOR,"#global-enhancements-search-query").send_keys(txt)
+    driver.find_element(By.CSS_SELECTOR,"#gnav-search > div > div.wt-input-btn-group.global-enhancements-search-input-btn-group.wt-menu__trigger.emphasized_search_bar.emphasized_search_bar_grey_bg > button").click()
+    time.sleep(3)
+    tshirt = driver.find_element(By.CSS_SELECTOR,"#content > div > div.wt-bg-white.wt-grid__item-md-12.wt-pl-xs-1.wt-pr-xs-0.wt-pr-md-1.wt-pl-lg-0.wt-pr-lg-0.wt-bb-xs-1 > div > div.wt-mt-xs-3.wt-text-black > div.wt-grid.wt-pl-xs-0.wt-pr-xs-1.search-listings-group > div:nth-child(3) > div.wt-bg-white.wt-display-block.wt-pb-xs-2.wt-mt-xs-0 > div:nth-child(1) > div > div > ul > li:nth-child(1) > div > div > a.listing-link.wt-display-inline-block.bec759db0692125bd.logged > div.v2-listing-card__info > div > h3")
+    result=tshirt.text
+    assert result == txt
