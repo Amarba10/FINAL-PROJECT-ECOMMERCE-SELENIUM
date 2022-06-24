@@ -27,30 +27,5 @@ class TestTestregistrationautomation():
     self.driver.find_element(By.CSS_SELECTOR, "#headerLogin > .black-icon").click()
     self.driver.find_element(By.CSS_SELECTOR, ".header-sign-up").click()
 
-    wait = WebDriverWait(driver, 10)
-    wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "#headerLogin"))).click()
-    time.sleep(3)
-    wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '#loginMenu > div:nth-child(1) > a'))).click()
-    driver.find_element(By.CSS_SELECTOR, '#loginMenu > div:nth-child(1) > a').click()
-    time.sleep(30)
-    # driver.find_element(By.CSS_SELECTOR,"#WC_UserRegistrationAddForm_FormInput_email1_In_Register_1").send_keys("amar.ba@gmail.com")
-    # driver.find_element(By.CSS_SELECTOR, "#WC_UserRegistrationAddForm_FormInput_logonPassword_In_Register_1").send_keys("1234567as")
-    element = driver.find_element(By.XPATH, "//div[@id='px-captcha']")
-    action = ActionChains(driver)
-    click = ActionChains(driver)
-    frame_x = element.location['x']
-    frame_y = element.location['y']
-    # print('x: ', frame_x)
-    # print('y: ', frame_y)
-    # print('size box: ', element.size)
-    # print('x max click: ', frame_x + element.size['width'])
-    # print('y max click: ', frame_y + element.size['height'])
-    x_move = frame_x + element.size['width'] * 0.5
-    y_move = frame_y + element.size['height'] * 0.5
-    action.move_to_element_with_offset(element, x_move, y_move).click_and_hold().perform()
-    time.sleep(10)
-    action.release(element)
-    action.perform()
-    time.sleep(0.2)
-    action.release(element)
+
   

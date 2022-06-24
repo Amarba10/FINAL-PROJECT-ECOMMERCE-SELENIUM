@@ -1,5 +1,4 @@
 import time
-
 from selenium.common import NoSuchElementException, ElementNotInteractableException, TimeoutException, \
     StaleElementReferenceException
 from selenium.webdriver import ActionChains
@@ -14,7 +13,6 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
-
 
 import pytest
 
@@ -32,7 +30,7 @@ def driver():
     # driver = webdriver.Firefox(service=ser_firefox)
 
     # dc = {
-    #     "browseName": "chrome",
+    #     "browserName": "chrome",
     #     "platformName": "MAC"
     # }
     #
@@ -43,18 +41,82 @@ def driver():
     driver.close()
 
 
+# Positive Scenario
 def test_registration(driver):
     driver.get('https://www.etsy.com/')
     driver.maximize_window()
-    driver.find_element(By.CSS_SELECTOR,"#gnav-header-inner > div.wt-flex-shrink-xs-0 > nav > ul > li:nth-child(1) > button").click()
-    time.sleep(3)
-    driver.find_element(By.CSS_SELECTOR,"#join-neu-form > div.wt-grid.wt-grid--block > div > div:nth-child(1) > div > button").click()
+    driver.find_element(By.CSS_SELECTOR,
+                        "#gnav-header-inner > div.wt-flex-shrink-xs-0 > nav > ul > li:nth-child(1) > button").click()
     time.sleep(2)
-    driver.find_element(By.CSS_SELECTOR,"#join_neu_email_field").send_keys("amar.ba@gmail.com")
-    driver.find_element(By.CSS_SELECTOR,"#join_neu_first_name_field").send_keys("Amar")
+    driver.find_element(By.CSS_SELECTOR,
+                        "#join-neu-form > div.wt-grid.wt-grid--block > div > div:nth-child(1) > div > button").click()
+    time.sleep(5)
+    driver.find_element(By.CSS_SELECTOR, "#join_neu_email_field").send_keys("Barake10@gmail.com")
+    driver.find_element(By.CSS_SELECTOR, "#join_neu_first_name_field").send_keys("Amar")
     driver.find_element(By.CSS_SELECTOR, "#join_neu_password_field").send_keys("12345678@")
-    driver.find_element(By.CSS_SELECTOR,"#join-neu-form > div.wt-grid.wt-grid--block > div > div:nth-child(9) > div > button").click()
+    driver.find_element(By.CSS_SELECTOR, "#join-neu-form > div.wt-grid.wt-grid--block > div > div:nth-child(9) > div > button").click()
+    time.sleep(5)
+    msg = driver.find_element(By.CSS_SELECTOR,".wt-p-md-3")
+    txt = msg.text
+    assert "Welcome to Etsy,Amar!" == txt
+
+# #Negative Scenario
+def test_Invalid_Email(driver):
+    driver.get('https://www.etsy.com/')
+    driver.maximize_window()
+    driver.find_element(By.CSS_SELECTOR,"#gnav-header-inner > div.wt-flex-shrink-xs-0 > nav > ul > li:nth-child(1) > button").click()
     time.sleep(2)
-    err_message=driver.find_element(By.CSS_SELECTOR,"#aria-join_neu_email_field-error")
-    err_text=err_message.text
-    assert "Sorry, the email you have entered is already in use." == err_text
+    driver.find_element(By.CSS_SELECTOR, "#join_neu_email_field").send_keys("amar@gmail.com")
+    driver.find_element(By.CSS_SELECTOR, "#join_neu_password_field").send_keys("12345678@")
+    time.sleep(4)
+    driver.find_element(By.CSS_SELECTOR, "#join-neu-form > div.wt-grid.wt-grid--block > div > div:nth-child(10) > div > button").click()
+    time.sleep(2)
+    invalid_message = driver.find_element(By.CSS_SELECTOR, "#aria-join_neu_password_field-error")
+    err_invalid = invalid_message.text
+    assert "Password was incorrect" == err_invalid
+    time.sleep(5)
+
+
+def test_mandatory_message(driver):
+    driver.get('https://www.etsy.com/')
+    driver.maximize_window()
+    driver.find_element(By.CSS_SELECTOR,"#gnav-header-inner > div.wt-flex-shrink-xs-0 > nav > ul > li:nth-child(1) > button").click()
+    time.sleep(2)
+    driver.find_element(By.CSS_SELECTOR, "#join-neu-form > div.wt-grid.wt-grid--block > div > div:nth-child(1) > div > button").click()
+    time.sleep(2)
+    driver.find_element(By.CSS_SELECTOR, "#join_neu_email_field").send_keys("amar.ba@gmail.com")
+    driver.find_element(By.CSS_SELECTOR, "#join_neu_first_name_field").send_keys("")
+    driver.find_element(By.CSS_SELECTOR, "#join_neu_password_field").send_keys("12345678@")
+    driver.find_element(By.CSS_SELECTOR, "#join-neu-form > div.wt-grid.wt-grid--block > div > div:nth-child(9) > div > button").click()
+    time.sleep(5)
+    err_message = driver.find_element(By.CSS_SELECTOR, "#aria-join_neu_first_name_field-error")
+    err_text = err_message.text
+    assert "First name can't be blank." == err_text
+    time.sleep(1)
+
+def test_incoorect_values(driver):
+    driver.get('https://www.etsy.com/')
+    driver.maximize_window()
+    driver.find_element(By.CSS_SELECTOR,"#gnav-header-inner > div.wt-flex-shrink-xs-0 > nav > ul > li:nth-child(1) > button").click()
+    time.sleep(2)
+    driver.find_element(By.CSS_SELECTOR, "#join-neu-form > div.wt-grid.wt-grid--block > div > div:nth-child(1) > div > button").click()
+    time.sleep(2)
+    driver.find_element(By.CSS_SELECTOR, "#join_neu_email_field").send_keys("121143424")
+    driver.find_element(By.CSS_SELECTOR, "#join_neu_first_name_field").send_keys("2312")
+    driver.find_element(By.CSS_SELECTOR, "#join_neu_password_field").send_keys("basdasd")
+    driver.find_element(By.CSS_SELECTOR, "#join-neu-form > div.wt-grid.wt-grid--block > div > div:nth-child(9) > div > button").click()
+    time.sleep(6)
+    invalidContent = driver.find_element(By.CSS_SELECTOR,"#aria-join_neu_email_field-error")
+    txt = invalidContent.text
+    assert "Please enter a valid email address." == txt
+    time.sleep(3)
+    driver.find_element(By.CSS_SELECTOR, "#join_neu_email_field").send_keys("vsds@gmail.com")
+    driver.find_element(By.CSS_SELECTOR, "#join_neu_first_name_field").send_keys("2312")
+    driver.find_element(By.CSS_SELECTOR, "#join_neu_password_field").send_keys("basdasd")
+    time.sleep(2)
+    driver.find_element(By.CSS_SELECTOR,  "#join-neu-form > div.wt-grid.wt-grid--block > div > div:nth-child(9) > div > button").click()
+    time.sleep(4)
+    invalidUsername = driver.find_element(By.CSS_SELECTOR, "#aria-join_neu_first_name_field-error")
+    txt1 = invalidUsername.text
+    assert "Your first name contains invalid characters." == txt1
+
