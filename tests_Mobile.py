@@ -60,7 +60,7 @@ def test_registration(driver):
     driver.find_element(By.CSS_SELECTOR,"ul.wt-display-flex-xs > li:nth-child(1) > a:nth-child(1)").click()
     time.sleep(2)
     driver.find_element(By.CSS_SELECTOR," #join_neu_email_field").click()
-    driver.find_element(By.CSS_SELECTOR, "#join_neu_email_field").send_keys("bamb@gmail.com")
+    driver.find_element(By.CSS_SELECTOR, "#join_neu_email_field").send_keys("pepsi@gmail.com")
     driver.find_element(By.CSS_SELECTOR,"button.wt-btn:nth-child(1)").click()
     time.sleep(2)
     driver.find_element(By.CSS_SELECTOR, "#join_neu_first_name_field").send_keys("Amar")
@@ -245,7 +245,7 @@ def test_total_price_change(driver):
     driver.find_element(By.CSS_SELECTOR, " button.wt-btn:nth-child(1)").click()
     time.sleep(3)
     curent_price = driver.find_element(By.CSS_SELECTOR,"tbody.wt-text-left-xs > tr:nth-child(5) > td:nth-child(2) > h1:nth-child(1)").text
-    time.sleep(2)
+    time.sleep(3)
     driver.find_element(By.CSS_SELECTOR, ".wt-grid__item-xs-5 > .wt-grid .wt-select__element").click()
     dropdown = driver.find_element(By.CSS_SELECTOR, ".wt-grid__item-xs-5 > .wt-grid .wt-select__element")
     dropdown.find_element(By.CSS_SELECTOR,"#multi-shop-cart-list > div > div > div.wt-grid.wt-position-relative.wt-pl-xs-0.wt-pr-xs-0 > ul > li > ul > li > div > div.wt-flex-xs-3.wt-pl-xs-2.wt-pl-lg-3 > div > div.wt-grid__item-xs-5.wt-hide-xs.wt-show-lg.wt-pl-xs-3 > div > div.wt-grid__item-xs-5.wt-pb-xs-1.wt-pr-xs-0 > div > div > div > select > option:nth-child(2)").click()
