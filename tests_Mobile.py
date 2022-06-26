@@ -56,7 +56,6 @@ def driver():
 # Positive Scenario
 def test_registration(driver):
     driver.get('https://www.etsy.com/')
-    driver.maximize_window()
     driver.find_element(By.CSS_SELECTOR,"ul.wt-display-flex-xs > li:nth-child(1) > a:nth-child(1)").click()
     time.sleep(2)
     driver.find_element(By.CSS_SELECTOR," #join_neu_email_field").click()
@@ -75,7 +74,6 @@ def test_registration(driver):
 # #Negative Scenario
 def test_Invalid_Email(driver):
     driver.get('https://www.etsy.com/')
-    driver.maximize_window()
     driver.find_element(By.CSS_SELECTOR,"ul.wt-display-flex-xs > li:nth-child(1) > a:nth-child(1)").click()
     driver.find_element(By.CSS_SELECTOR, "#join_neu_email_field").send_keys("amar09090@gmail.com")
     driver.find_element(By.CSS_SELECTOR, "button.wt-btn:nth-child(1)").click()
@@ -87,7 +85,6 @@ def test_Invalid_Email(driver):
 
 def test_mandatory_message(driver):
     driver.get('https://www.etsy.com/')
-    driver.maximize_window()
     driver.find_element(By.CSS_SELECTOR,"ul.wt-display-flex-xs > li:nth-child(1) > a:nth-child(1)").click()
     time.sleep(2)
     driver.find_element(By.CSS_SELECTOR, " #join_neu_email_field").click()
@@ -106,7 +103,6 @@ def test_mandatory_message(driver):
 
 def test_incorect_values(driver):
     driver.get('https://www.etsy.com/')
-    driver.maximize_window()
     driver.find_element(By.CSS_SELECTOR, "ul.wt-display-flex-xs > li:nth-child(1) > a:nth-child(1)").click()
     time.sleep(2)
     driver.find_element(By.CSS_SELECTOR, " #join_neu_email_field").click()
@@ -132,14 +128,13 @@ def test_incorect_values(driver):
 
 def test_search_product(driver):
     driver.get('https://www.etsy.com/')
-    driver.maximize_window()
     driver.find_element(By.CSS_SELECTOR, "ul.wt-display-flex-xs > li:nth-child(1) > a:nth-child(1)").click()
     time.sleep(2)
     driver.find_element(By.CSS_SELECTOR, " #join_neu_email_field").click()
-    driver.find_element(By.CSS_SELECTOR, "#join_neu_email_field").send_keys("monmon@gmail.com")
+    driver.find_element(By.CSS_SELECTOR, "#join_neu_email_field").send_keys("amaro4@gmail.com")
     driver.find_element(By.CSS_SELECTOR, "button.wt-btn:nth-child(1)").click()
     time.sleep(2)
-    driver.find_element(By.CSS_SELECTOR, "#join_neu_password_field").send_keys("123456&")
+    driver.find_element(By.CSS_SELECTOR, "#join_neu_password_field").send_keys("12345678(")
     time.sleep(3)
     driver.find_element(By.CSS_SELECTOR, " button.wt-btn:nth-child(1)").click()
     time.sleep(4)
@@ -160,7 +155,6 @@ def test_search_product(driver):
 
 def test_buy_product(driver):
     driver.get('https://www.etsy.com/')
-    driver.maximize_window()
     driver.find_element(By.CSS_SELECTOR, "li.shopping-window:nth-child(6) > a:nth-child(1)").click()
     driver.find_element(By.CSS_SELECTOR, "li.wt-order-xs-0:nth-child(1) > div:nth-child(1) > a:nth-child(1)").click()
     driver.get("https://www.etsy.com/il-en/listing/823311406/diy-solar-printing-kit-craft-kit?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=craft+kits&ref=sc_gallery-1-1&frs=1&etp=1&plkey=026c479119a2a50d7b8a25a9fcaef8070cebddda%3A823311406")
@@ -203,7 +197,6 @@ def test_buy_product(driver):
 
 def test_add_to_whishlist(driver):
     driver.get('https://www.etsy.com/')
-    driver.maximize_window()
     time.sleep(2)
     driver.find_element(By.CSS_SELECTOR, "li.shopping-window:nth-child(6) > a:nth-child(1)").click()
     driver.find_element(By.CSS_SELECTOR, "li.wt-order-xs-0:nth-child(1) > div:nth-child(1) > a:nth-child(1)").click()
@@ -213,7 +206,7 @@ def test_add_to_whishlist(driver):
     time.sleep(4)
     msg = driver.find_element(By.CSS_SELECTOR,"div.wt-grid:nth-child(8) > div:nth-child(1) > div:nth-child(1)").text
     time.sleep(3)
-    assert "Before you can do that...\nSign in or register with your email address" == msg
+    assert "Sign in to continue\nSign in or register with your email address" == msg
 
 
 
@@ -222,8 +215,7 @@ def test_total_price_change(driver):
     driver.maximize_window()
     driver.find_element(By.CSS_SELECTOR, "li.shopping-window:nth-child(6) > a:nth-child(1)").click()
     driver.find_element(By.CSS_SELECTOR, "li.wt-order-xs-0:nth-child(1) > div:nth-child(1) > a:nth-child(1)").click()
-    driver.get(
-        "https://www.etsy.com/il-en/listing/823311406/diy-solar-printing-kit-craft-kit?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=craft+kits&ref=sc_gallery-1-1&frs=1&etp=1&plkey=026c479119a2a50d7b8a25a9fcaef8070cebddda%3A823311406")
+    driver.get( "https://www.etsy.com/il-en/listing/823311406/diy-solar-printing-kit-craft-kit?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=craft+kits&ref=sc_gallery-1-1&frs=1&etp=1&plkey=026c479119a2a50d7b8a25a9fcaef8070cebddda%3A823311406")
     time.sleep(3)
     driver.find_element(By.ID, "variation-selector-0").click()
     dropdown = driver.find_element(By.ID, "variation-selector-0")
