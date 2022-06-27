@@ -22,22 +22,7 @@ import pytest
 
 @pytest.fixture()
 def driver():
-    # chrome_driver_binary = r"./chromedriver 2"
-    # ser_chrome = ChromeService(chrome_driver_binary)
-    # driver = webdriver.Chrome(service=ser_chrome)
-
-    # driver = webdriver.Safari()
-
-    # Firefox_driver_binary = r"./drivers/geckodriver"
-    # ser_firefox = FirefoxService(Firefox_driver_binary)
-    # driver = webdriver.Firefox(service=ser_firefox)
-
-    # dc = {
-    #     "browserName": "chrome",
-    #     "platformName": "MAC"
-    # }
-    #
-    # # selenium grid
+    # selenium grid
     # driver = webdriver.Remote("http://localhost:4444",desired_capabilities= dc)
     Firefox_driver_binary = "./geckodriver"
     fire_fox_options = FireFoxOptions()

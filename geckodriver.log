@@ -13365,3 +13365,23 @@ JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: NotFoundEr
 
 ###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
 
+1656349874337	geckodriver	INFO	Listening on 127.0.0.1:58299
+1656349874859	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--width=834" "--height=1194" "--remote-debugging-port" "58300" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/wv/92383mtd4nlbpv56sj0xnv0m0000gn/T/rust_mozprofile6AJqha"
+1656349875701	Marionette	INFO	Marionette enabled
+2022-06-27 20:11:15.732 plugin-container[9077:284525] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-27 20:11:15.740 plugin-container[9077:284525] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-06-27 20:11:15.787 plugin-container[9077:284525] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-27 20:11:15.788 plugin-container[9077:284525] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-06-27 20:11:15.788 plugin-container[9077:284523] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-27 20:11:15.788 plugin-container[9077:284523] nil host used in call to allowsAnyHTTPSCertificateForHost:
+WebDriver BiDi listening on ws://localhost:58300
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/wv/92383mtd4nlbpv56sj0xnv0m0000gn/T/rust_mozprofile6AJqha/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1656349877205	Marionette	INFO	Listening on port 58315
+DevTools listening on ws://localhost:58300/devtools/browser/dd0019e7-c2e9-423b-af63-c8bf9590b984
+Read port: 58315
+1656349877264	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+JavaScript warning: https://www.etsy.com/ac/primary/js/en-US/app-shell/globals/index.682644f88ee201d939b7.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1656349881331	Marionette	INFO	Stopped listening on port 58315

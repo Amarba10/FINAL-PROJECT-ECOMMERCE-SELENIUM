@@ -67,84 +67,10 @@ def driver():
 
         driver = webdriver.Firefox(service=ser_firefox, options=firefox_options)
 
-    # elif browser_name == "android-emulator":
-    #     dc = {
-    #         "platformName": "Android",
-    #         "platformVersion": "8.1.0",
-    #         "deviceName": "Android Emulator",
-    #         # "platformVersion": "11.0.0",
-    #         # "deviceName": "1aaa4ea80404",
-    #         "automationName": "Appium",
-    #         # "app": "com.android.chrome",
-    #         "browserName": "Chrome"
-    #     }
-    #     driver = webdriver.Remote("http://localhost:4723/wd/hub", dc)
-    #
-    # elif browser_name == "android-phone":
-    #     dc = {
-    #         "platformName": "Android",
-    #         "platformVersion": "11.0.0",
-    #         "deviceName": "1aaa4ea80404",
-    #         "automationName": "Appium",
-    #         "browserName": "Chrome"
-    #     }
-    #
-    #     driver = webdriver.Remote("http://localhost:4723/wd/hub", dc)
-    # else:
-    #     raise Exception("driver doesn't exists")
-    #
-    #
 
-
-
-
-
-
-
-
-
-    # firefox_options.add_argument('--user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1')
-
-    # capabilities = {
-    #     'browserName': 'firefox',
-    #     'firefoxOptions': {
-    #         'mobileEmulation': {
-    #             'deviceName': 'iPhone X'
-    #         }
-    #     }
-    # }
-    # user_agent = "Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_0 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7A341 Safari/528.16"
-
-    # profile = webdriver.FirefoxProfile()
-    # profile.set_preference("general.useragent.override", user_agent)
-    # driver = webdriver.Firefox(profile)
-
-
-    # parent_handle = driver.current_window_handle
-    # for handle in driver.window_handles:
-    #     if parent_handle != handle:
-    #         driver.switch_to(handle)
 
     yield driver
     driver.close()
-# def driver():
-#
-#     chrome_driver_binary = r"./chromedriver 2"
-#     ser_chrome = ChromeService(chrome_driver_binary)
-#     driver = webdriver.Chrome(service=ser_chrome)
-#
-#
-#
-#     # dc = {
-#     #     "browserName": "chrome",
-#     #     "platformName": "MAC"
-#     # }
-#     #
-#     # # selenium grid
-#     # driver = webdriver.Remote("http://localhost:4444",desired_capabilities= dc)
-#
-#     yield driver
-#     driver.close()
 
 
 # Positive Scenario
