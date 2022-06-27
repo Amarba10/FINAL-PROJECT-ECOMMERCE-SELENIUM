@@ -25,16 +25,6 @@ def driver():
     ser_chrome = ChromeService(chrome_driver_binary)
     driver = webdriver.Chrome(service=ser_chrome)
 
-
-
-    # dc = {
-    #     "browserName": "chrome",
-    #     "platformName": "MAC"
-    # }
-    #
-    # # selenium grid
-    # driver = webdriver.Remote("http://localhost:4444",desired_capabilities= dc)
-
     yield driver
     driver.close()
 
@@ -47,7 +37,7 @@ def test_registration(driver):
     time.sleep(2)
     driver.find_element(By.CSS_SELECTOR, "#join-neu-form > div.wt-grid.wt-grid--block > div > div:nth-child(1) > div > button").click()
     time.sleep(5)
-    driver.find_element(By.CSS_SELECTOR, "#join_neu_email_field").send_keys("Amarbarake10@gmail.com")
+    driver.find_element(By.CSS_SELECTOR, "#join_neu_email_field").send_keys("Amarbarake19@gmail.com")
     driver.find_element(By.CSS_SELECTOR, "#join_neu_first_name_field").send_keys("Amar")
     driver.find_element(By.CSS_SELECTOR, "#join_neu_password_field").send_keys("12345678@")
     driver.find_element(By.CSS_SELECTOR, "#join-neu-form > div.wt-grid.wt-grid--block > div > div:nth-child(9) > div > button").click()
@@ -71,7 +61,7 @@ def test_Invalid_Email(driver):
     invalid_message = driver.find_element(By.CSS_SELECTOR, "#aria-join_neu_password_field-error")
     err_invalid = invalid_message.text
     assert "Password was incorrect" == err_invalid
-    time.sleep(5)
+
 
 
 def test_mandatory_message(driver):
@@ -89,7 +79,7 @@ def test_mandatory_message(driver):
     err_message = driver.find_element(By.CSS_SELECTOR, "#aria-join_neu_first_name_field-error")
     err_text = err_message.text
     assert "First name can't be blank." == err_text
-    time.sleep(1)
+
 
 
 def test_incorect_values(driver):
@@ -108,6 +98,7 @@ def test_incorect_values(driver):
     txt = invalidContent.text
     assert "Please enter a valid email address." == txt
     time.sleep(3)
+    driver.find_element(By.CSS_SELECTOR, "#join_neu_email_field").clear()
     driver.find_element(By.CSS_SELECTOR, "#join_neu_email_field").send_keys("vsds@gmail.com")
     driver.find_element(By.CSS_SELECTOR, "#join_neu_first_name_field").send_keys("2312")
     driver.find_element(By.CSS_SELECTOR, "#join_neu_password_field").send_keys("basdasd")
@@ -122,13 +113,13 @@ def test_incorect_values(driver):
 def test_search_product(driver):
     driver.get('https://www.etsy.com/')
     driver.maximize_window()
-    driver.find_element(By.CSS_SELECTOR, "#gnav-header-inner > div.wt-flex-shrink-xs-0 > nav > ul > li:nth-child(1) > button").click()
-    time.sleep(2)
-    driver.find_element(By.CSS_SELECTOR, "#join_neu_email_field").send_keys("mostafa1@gmail.com")
-    driver.find_element(By.CSS_SELECTOR, "#join_neu_password_field").send_keys("0987654321!")
-    time.sleep(2)
-    driver.find_element(By.CSS_SELECTOR,  "#join-neu-form > div.wt-grid.wt-grid--block > div > div:nth-child(10) > div > button").click()
-    time.sleep(4)
+    # driver.find_element(By.CSS_SELECTOR, "#gnav-header-inner > div.wt-flex-shrink-xs-0 > nav > ul > li:nth-child(1) > button").click()
+    # time.sleep(2)
+    # driver.find_element(By.CSS_SELECTOR, "#join_neu_email_field").send_keys("amarbarake19@gmail.com")
+    # driver.find_element(By.CSS_SELECTOR, "#join_neu_password_field").send_keys("12345678@")
+    # time.sleep(2)
+    # driver.find_element(By.CSS_SELECTOR,  "#join-neu-form > div.wt-grid.wt-grid--block > div > div:nth-child(10) > div > button").click()
+    # time.sleep(4)
     element = driver.find_element(By.ID, "catnav-primary-link-10923")
     actions = ActionChains(driver)
     actions.move_to_element(element).perform()
@@ -139,7 +130,7 @@ def test_search_product(driver):
     driver.get("https://www.etsy.com/il-en/listing/1226189086/here-comes-the-sun-t-shirt-for-women?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=&ref=sc_gallery-1-1&pro=1&plkey=c08a7e0357c01f8d92b0edc780088529da8ffb2a%3A1226189086")
     name = driver.find_element(By.CSS_SELECTOR,"#listing-page-cart > div.wt-mb-xs-2 > h1")
     txt = name.text
-    time.sleep(5)
+    time.sleep(4)
     driver.find_element(By.CSS_SELECTOR, "#global-enhancements-search-query").send_keys(txt)
     driver.find_element(By.CSS_SELECTOR, "#gnav-search > div > div.wt-input-btn-group.global-enhancements-search-input-btn-group.wt-menu__trigger.emphasized_search_bar.emphasized_search_bar_grey_bg > button").click()
     driver.get("https://www.etsy.com/il-en/listing/1226189086/here-comes-the-sun-t-shirt-for-women?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=Here+Comes+the+Sun+T+Shirt+For+Women%2C+Travel+Beach+Vacation+Shirt%2C+Sunshine+Shirt%2C+Beatles+Retro+Shirt%2C+Motivational+Shirt%2C+Gift+for+Her&ref=sc_gallery-1-1&pro=1&plkey=850212bf1523a8796d875b681954ef5ed07aac77%3A1226189086")
@@ -155,8 +146,8 @@ def test_buy_product(driver):
     time.sleep(2)
     driver.find_element(By.CSS_SELECTOR, "#gnav-header-inner > div.wt-flex-shrink-xs-0 > nav > ul > li:nth-child(1) > button").click()
     time.sleep(2)
-    driver.find_element(By.CSS_SELECTOR, "#join_neu_email_field").send_keys("mrfotaa@gmail.com")
-    driver.find_element(By.CSS_SELECTOR, "#join_neu_password_field").send_keys("834500=")
+    driver.find_element(By.CSS_SELECTOR, "#join_neu_email_field").send_keys("amarbarake19@gmail.com")
+    driver.find_element(By.CSS_SELECTOR, "#join_neu_password_field").send_keys("12345678@")
     time.sleep(2)
     driver.find_element(By.CSS_SELECTOR,"#join-neu-form > div.wt-grid.wt-grid--block > div > div:nth-child(10) > div > button").click()
     time.sleep(2)
@@ -192,7 +183,7 @@ def test_buy_product(driver):
     driver.find_element(By.ID, "zip21-input").send_keys("2020000")
     time.sleep(2)
     driver.find_element(By.CSS_SELECTOR,"#shipping-address-form > div.wt-pl-xs-2.wt-pr-xs-2.wt-pl-md-0.wt-pr-md-0.wt-mt-xs-2 > button").click()
-    time.sleep(3)
+
 
 
 def test_add_to_whishlist(driver):
@@ -206,11 +197,11 @@ def test_add_to_whishlist(driver):
     driver.find_element(By.ID, "catnav-l4-10926").click()
     time.sleep(2)
     driver.get("https://www.etsy.com/il-en/listing/1095947005/bestseller-gipsy-layered-boho-skirt-maxi?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=&ref=sc_gallery-1-4&frs=1&plkey=2c20db55b80a7061cfcf6ebf11ea1788473e185d%3A1095947005")
-    time.sleep(5)
+    time.sleep(3)
     driver.find_element(By.CSS_SELECTOR,"#listing-right-column > div > div.body-wrap.wt-body-max-width.wt-display-flex-md.wt-flex-direction-column-xs > div.image-col.wt-order-xs-1.wt-mb-lg-6 > div > div > div > button").click()
-    time.sleep(5)
+    time.sleep(3)
     driver.find_element(By.CSS_SELECTOR,"#gnav-header-inner > div.wt-flex-shrink-xs-0 > nav > ul > li:nth-child(2) > span > a").click()
-    time.sleep(6)
+    time.sleep(4)
     driver.find_element(By.CSS_SELECTOR,"#content > div > div.wt-body-max-width > div > div.wt-mt-xs-3.wt-mb-xs-1.wt-mt-md-5.wt-mb-md-2 > div > a.wt-btn.wt-btn--tertiary.wt-btn--icon.wt-ml-xs-3.inline-overlay-trigger.guest-favorites-edit-action").click()
     time.sleep(3)
     msg = driver.find_element(By.CSS_SELECTOR,"#join-neu-form > div.wt-grid.wt-grid--block > div > div.wt-mb-xs-3").text
@@ -225,8 +216,8 @@ def test_total_price_change(driver):
     time.sleep(2)
     driver.find_element(By.CSS_SELECTOR, "#gnav-header-inner > div.wt-flex-shrink-xs-0 > nav > ul > li:nth-child(1) > button").click()
     time.sleep(2)
-    driver.find_element(By.CSS_SELECTOR, "#join_neu_email_field").send_keys("mrfotaa@gmail.com")
-    driver.find_element(By.CSS_SELECTOR, "#join_neu_password_field").send_keys("834500=")
+    driver.find_element(By.CSS_SELECTOR, "#join_neu_email_field").send_keys("amarbarake19@gmail.com")
+    driver.find_element(By.CSS_SELECTOR, "#join_neu_password_field").send_keys("12345678@")
     time.sleep(2)
     driver.find_element(By.CSS_SELECTOR,"#join-neu-form > div.wt-grid.wt-grid--block > div > div:nth-child(10) > div > button").click()
     time.sleep(2)

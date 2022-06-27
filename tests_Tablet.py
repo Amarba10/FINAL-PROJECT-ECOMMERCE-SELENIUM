@@ -118,6 +118,7 @@ def test_incorect_values(driver):
     txt = invalidContent.text
     assert "Please enter a valid email address." == txt
     time.sleep(3)
+    driver.find_element(By.CSS_SELECTOR, "#join_neu_email_field").clear()
     driver.find_element(By.CSS_SELECTOR, "#join_neu_email_field").send_keys("vsds@gmail.com")
     driver.find_element(By.CSS_SELECTOR, "#join_neu_first_name_field").send_keys("2312")
     driver.find_element(By.CSS_SELECTOR, "#join_neu_password_field").send_keys("basdasd")
@@ -138,17 +139,16 @@ def test_search_product(driver):
     # time.sleep(2)
     # driver.find_element(By.CSS_SELECTOR,  "#join-neu-form > div.wt-grid.wt-grid--block > div > div:nth-child(10) > div > button").click()
     # time.sleep(4)
-
-    time.sleep(4)
-    driver.find_element(By.CSS_SELECTOR, "li.shopping-window:nth-child(1) > a:nth-child(1)").click()
-    driver.find_element(By.CSS_SELECTOR, "li.wt-order-xs-2:nth-child(3) > div:nth-child(1) > div:nth-child(1) > a:nth-child(1)").click()
-    driver.get( "https://www.etsy.com/il-en/listing/1112269751/set-of-14-boho-wall-decorseagrass?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=wall+decor&ref=sc_gallery-1-3&pro=1&plkey=2c212fe40d17bfa3e9874160166e08fa4ff6e7ee%3A1112269751")
-    name = driver.find_element(By.CSS_SELECTOR, "h1.wt-text-body-03").text
-    driver.find_element(By.CSS_SELECTOR, "#global-enhancements-search-query").send_keys(name)
-    driver.find_element(By.CSS_SELECTOR, ".wt-input-btn-group__btn").click()
-    time.sleep(5)
+    driver.find_element(By.CSS_SELECTOR, "li.shopping-window:nth-child(6) > a:nth-child(1)").click()
     driver.find_element(By.CSS_SELECTOR, ".tab-reorder-container > li:nth-child(1) > div:nth-child(1) > div:nth-child(1) > a:nth-child(1)").click()
-    driver.get("https://www.etsy.com/il-en/listing/1112269751/set-of-14-boho-wall-decorseagrass?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=Set+of+14+Boho+Wall+Decor%2CSeagrass+Baskets+Wall+Decor%2C+Wicker+Hanging+Wall+Basket%2C+Natural+Boho+Wall+Decor-Boho+Decor%2C+Father%26%2339%3Bs+Day+Gift&ref=sc_gallery-1-1&pro=1&plkey=83101b367f31d8156869fcf9949e9f20cbd9d620%3A1112269751")
+    driver.get( "https://www.etsy.com/il-en/listing/848136290/botanical-linocut-kit-uk-made-includes?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=craft+kits&ref=sc_gallery-1-1&sts=1&plkey=507574a2ac4d9a578d96b8772d5f92c6fbe46fe8%3A848136290")
+    name = driver.find_element(By.CSS_SELECTOR, "h1.wt-text-body-03").text
+    time.sleep(3)
+    driver.find_element(By.CSS_SELECTOR, "#global-enhancements-search-query").send_keys(name)
+    driver.find_element(By.CSS_SELECTOR, ".global-enhancements-search-input-btn-group__btn").click()
+    time.sleep(2)
+    driver.find_element(By.CSS_SELECTOR, "li.wt-block-grid__item:nth-child(1) > div:nth-child(1) > a:nth-child(1)").click()
+    driver.get("https://www.etsy.com/il-en/listing/848136290/botanical-linocut-kit-uk-made-includes?click_key=db2460b1454c7fc253a873d440043351e628750b%3A848136290&click_sum=4e4b4fce&ref=search_recently_viewed-1&sts=1")
     time.sleep(2)
     txt = driver.find_element(By.CSS_SELECTOR, "h1.wt-text-body-03").text
     assert txt == name
