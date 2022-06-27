@@ -49,7 +49,7 @@ def driver():
     ser_firefox = FirefoxService(Firefox_driver_binary)
     driver = webdriver.Firefox(service=ser_firefox, options=fire_fox_options)
     yield driver
-    # driver.close()
+    driver.close()
 
 
 

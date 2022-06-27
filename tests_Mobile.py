@@ -49,7 +49,7 @@ def driver():
     ser_firefox = FirefoxService(Firefox_driver_binary)
     driver = webdriver.Firefox(service=ser_firefox, options=fire_fox_options)
     yield driver
-    # driver.close()
+    driver.close()
 
 
 
@@ -71,7 +71,7 @@ def test_registration(driver):
     assert "Welcome to Etsy, Amar!" == txt
 
 
-# #Negative Scenario
+#Negative Scenario
 def test_Invalid_Email(driver):
     driver.get('https://www.etsy.com/')
     driver.find_element(By.CSS_SELECTOR,"ul.wt-display-flex-xs > li:nth-child(1) > a:nth-child(1)").click()
@@ -80,7 +80,7 @@ def test_Invalid_Email(driver):
     time.sleep(3)
     msg = driver.find_element(By.CSS_SELECTOR,"div.wt-grid:nth-child(9) > div:nth-child(1) > div:nth-child(1)").text
     assert "Create your account\nRegistration is easy." == msg
-    time.sleep(5)
+
 
 
 def test_mandatory_message(driver):
@@ -206,7 +206,7 @@ def test_add_to_whishlist(driver):
     time.sleep(4)
     msg = driver.find_element(By.CSS_SELECTOR,"div.wt-grid:nth-child(8) > div:nth-child(1) > div:nth-child(1)").text
     time.sleep(3)
-    assert "Sign in to continue\nSign in or register with your email address" == msg
+    assert "Before you can do that...\nSign in or register with your email address" == msg
 
 
 

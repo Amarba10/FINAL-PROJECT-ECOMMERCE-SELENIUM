@@ -30,7 +30,7 @@ def driver():
     # driver = webdriver.Remote("http://localhost:4444",desired_capabilities= dc)
 
     yield driver
-    # driver.close()
+    driver.close()
 
 
 # Positive Scenario
