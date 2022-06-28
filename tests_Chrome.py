@@ -37,7 +37,7 @@ def test_registration(driver):
     time.sleep(2)
     driver.find_element(By.CSS_SELECTOR, "#join-neu-form > div.wt-grid.wt-grid--block > div > div:nth-child(1) > div > button").click()
     time.sleep(5)
-    driver.find_element(By.CSS_SELECTOR, "#join_neu_email_field").send_keys("Amarbarake19@gmail.com")
+    driver.find_element(By.CSS_SELECTOR, "#join_neu_email_field").send_keys("amarbarake19@gmail.com")
     driver.find_element(By.CSS_SELECTOR, "#join_neu_first_name_field").send_keys("Amar")
     driver.find_element(By.CSS_SELECTOR, "#join_neu_password_field").send_keys("12345678@")
     driver.find_element(By.CSS_SELECTOR, "#join-neu-form > div.wt-grid.wt-grid--block > div > div:nth-child(9) > div > button").click()

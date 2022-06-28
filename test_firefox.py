@@ -34,7 +34,7 @@ def test_registration(driver):
     time.sleep(2)
     driver.find_element(By.CSS_SELECTOR, "#join-neu-form > div.wt-grid.wt-grid--block > div > div:nth-child(1) > div > button").click()
     time.sleep(5)
-    driver.find_element(By.CSS_SELECTOR, "#join_neu_email_field").send_keys("Amar10ba@gmail.com")
+    driver.find_element(By.CSS_SELECTOR, "#join_neu_email_field").send_keys("amar10ba@gmail.com")
     driver.find_element(By.CSS_SELECTOR, "#join_neu_first_name_field").send_keys("Amar")
     driver.find_element(By.CSS_SELECTOR, "#join_neu_password_field").send_keys("12345678@")
     driver.find_element(By.CSS_SELECTOR, "#join-neu-form > div.wt-grid.wt-grid--block > div > div:nth-child(9) > div > button").click()
@@ -76,7 +76,7 @@ def test_mandatory_message(driver):
     err_message = driver.find_element(By.CSS_SELECTOR, "#aria-join_neu_first_name_field-error")
     err_text = err_message.text
     assert "First name can't be blank." == err_text
-    time.sleep(1)
+
 
 
 def test_incorect_values(driver):

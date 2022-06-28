@@ -28,7 +28,7 @@ def driver():
     options = webdriver.ChromeOptions()
     options.binary_location = brave_path
 
-    browser_name = "chrome"
+    browser_name = "safari"
 
     # if isinstance(browserName,list):
     #     for browser_name in browserName:
@@ -44,7 +44,7 @@ def driver():
 
     elif browser_name == "safari":
         dc = {
-            "browserName": "safari",
+            "browserName": "Safari",
             "platformName": "MAC"
         }
         driver = webdriver.Remote("http://localhost:4444",desired_capabilities=dc)
@@ -81,7 +81,7 @@ def test_registration(driver):
     time.sleep(2)
     driver.find_element(By.CSS_SELECTOR, "#join-neu-form > div.wt-grid.wt-grid--block > div > div:nth-child(1) > div > button").click()
     time.sleep(5)
-    driver.find_element(By.CSS_SELECTOR, "#join_neu_email_field").send_keys("Amarbarake10@gmail.com")
+    driver.find_element(By.CSS_SELECTOR, "#join_neu_email_field").send_keys("amarbarake10@gmail.com")
     driver.find_element(By.CSS_SELECTOR, "#join_neu_first_name_field").send_keys("Amar")
     driver.find_element(By.CSS_SELECTOR, "#join_neu_password_field").send_keys("12345678@")
     driver.find_element(By.CSS_SELECTOR, "#join-neu-form > div.wt-grid.wt-grid--block > div > div:nth-child(9) > div > button").click()
@@ -158,8 +158,8 @@ def test_search_product(driver):
     driver.maximize_window()
     driver.find_element(By.CSS_SELECTOR, "#gnav-header-inner > div.wt-flex-shrink-xs-0 > nav > ul > li:nth-child(1) > button").click()
     time.sleep(2)
-    driver.find_element(By.CSS_SELECTOR, "#join_neu_email_field").send_keys("mostafa1@gmail.com")
-    driver.find_element(By.CSS_SELECTOR, "#join_neu_password_field").send_keys("0987654321!")
+    driver.find_element(By.CSS_SELECTOR, "#join_neu_email_field").send_keys("barake.amaro@gmail.com")
+    driver.find_element(By.CSS_SELECTOR, "#join_neu_password_field").send_keys("123456&*")
     time.sleep(2)
     driver.find_element(By.CSS_SELECTOR,  "#join-neu-form > div.wt-grid.wt-grid--block > div > div:nth-child(10) > div > button").click()
     time.sleep(4)
@@ -189,8 +189,8 @@ def test_buy_product(driver):
     time.sleep(2)
     driver.find_element(By.CSS_SELECTOR, "#gnav-header-inner > div.wt-flex-shrink-xs-0 > nav > ul > li:nth-child(1) > button").click()
     time.sleep(2)
-    driver.find_element(By.CSS_SELECTOR, "#join_neu_email_field").send_keys("mrfotaa@gmail.com")
-    driver.find_element(By.CSS_SELECTOR, "#join_neu_password_field").send_keys("834500=")
+    driver.find_element(By.CSS_SELECTOR, "#join_neu_email_field").send_keys("barake.amaro@gmail.com")
+    driver.find_element(By.CSS_SELECTOR, "#join_neu_password_field").send_keys("123456&*")
     time.sleep(2)
     driver.find_element(By.CSS_SELECTOR,"#join-neu-form > div.wt-grid.wt-grid--block > div > div:nth-child(10) > div > button").click()
     time.sleep(2)

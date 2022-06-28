@@ -13385,3 +13385,415 @@ Read port: 58315
 UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
 JavaScript warning: https://www.etsy.com/ac/primary/js/en-US/app-shell/globals/index.682644f88ee201d939b7.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
 1656349881331	Marionette	INFO	Stopped listening on port 58315
+1656355899612	geckodriver	INFO	Listening on 127.0.0.1:59713
+1656355900122	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--width=414" "--height=896" "--remote-debugging-port" "59714" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/wv/92383mtd4nlbpv56sj0xnv0m0000gn/T/rust_mozprofilee31Ug0"
+2022-06-27 21:51:40.610 plugin-container[10289:323998] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-27 21:51:40.611 plugin-container[10289:323998] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1656355900616	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:59714
+2022-06-27 21:51:40.657 plugin-container[10289:323998] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-27 21:51:40.657 plugin-container[10289:323998] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-06-27 21:51:40.657 plugin-container[10289:323996] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-27 21:51:40.657 plugin-container[10289:323996] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/wv/92383mtd4nlbpv56sj0xnv0m0000gn/T/rust_mozprofilee31Ug0/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1656355901529	Marionette	INFO	Listening on port 59727
+DevTools listening on ws://localhost:59714/devtools/browser/e964fc38-7639-45e4-930a-b41955d5c997
+Read port: 59727
+1656355901594	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+JavaScript warning: https://www.etsy.com/ac/evergreen/js/en-US/app-shell/globals/index.f7eea6af238a89a5b508.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.etsy.com/ac/evergreen/js/en-US/app-shell/globals/index.f7eea6af238a89a5b508.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.etsy.com/ac/evergreen/js/en-US/app-shell/globals/index.f7eea6af238a89a5b508.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.etsy.com/ac/evergreen/js/en-US/app-shell/globals/index.f7eea6af238a89a5b508.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.etsy.com"
+1656355921811	Marionette	INFO	Stopped listening on port 59727
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1656356134645	geckodriver	INFO	Listening on 127.0.0.1:59911
+1656356135161	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "59912" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/wv/92383mtd4nlbpv56sj0xnv0m0000gn/T/rust_mozprofileLYY9LF"
+2022-06-27 21:55:35.540 plugin-container[10452:327309] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-27 21:55:35.540 plugin-container[10452:327309] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1656356135556	Marionette	INFO	Marionette enabled
+2022-06-27 21:55:35.572 plugin-container[10452:327309] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-27 21:55:35.572 plugin-container[10452:327309] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-06-27 21:55:35.573 plugin-container[10452:327312] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-27 21:55:35.573 plugin-container[10452:327312] nil host used in call to allowsAnyHTTPSCertificateForHost:
+WebDriver BiDi listening on ws://localhost:59912
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/wv/92383mtd4nlbpv56sj0xnv0m0000gn/T/rust_mozprofileLYY9LF/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1656356136465	Marionette	INFO	Listening on port 59925
+DevTools listening on ws://localhost:59912/devtools/browser/6e79daf2-e3cd-48a5-adf1-6620edf8c6d6
+Read port: 59925
+1656356136526	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+JavaScript warning: https://www.etsy.com/ac/evergreen/js/en-US/app-shell/globals/index.f7eea6af238a89a5b508.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1656356140824	Marionette	INFO	Stopped listening on port 59925
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1656356148550	geckodriver	INFO	Listening on 127.0.0.1:60007
+1656356148555	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "60008" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/wv/92383mtd4nlbpv56sj0xnv0m0000gn/T/rust_mozprofileWXBX3Y"
+2022-06-27 21:55:48.823 plugin-container[10465:327849] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-27 21:55:48.823 plugin-container[10465:327849] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-06-27 21:55:48.824 plugin-container[10465:327849] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-27 21:55:48.824 plugin-container[10465:327849] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-06-27 21:55:48.825 plugin-container[10465:327851] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-27 21:55:48.825 plugin-container[10465:327851] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1656356148826	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:60008
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/wv/92383mtd4nlbpv56sj0xnv0m0000gn/T/rust_mozprofileWXBX3Y/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1656356149658	Marionette	INFO	Listening on port 60019
+DevTools listening on ws://localhost:60008/devtools/browser/dbd67090-fc45-4c08-a53c-c261bd0f2307
+Read port: 60019
+1656356149700	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+JavaScript warning: https://www.etsy.com/ac/evergreenVendor/js/en-US/app-shell/globals/index.f832d18e6f7b43a135d4.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1656356157021	Marionette	INFO	Stopped listening on port 60019
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1656356161045	geckodriver	INFO	Listening on 127.0.0.1:60100
+1656356161051	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "60101" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/wv/92383mtd4nlbpv56sj0xnv0m0000gn/T/rust_mozprofiledfh7fR"
+2022-06-27 21:56:01.332 plugin-container[10480:328336] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-27 21:56:01.332 plugin-container[10480:328336] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1656356161334	Marionette	INFO	Marionette enabled
+2022-06-27 21:56:01.335 plugin-container[10480:328336] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-27 21:56:01.335 plugin-container[10480:328336] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-06-27 21:56:01.336 plugin-container[10480:328347] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-27 21:56:01.336 plugin-container[10480:328347] nil host used in call to allowsAnyHTTPSCertificateForHost:
+WebDriver BiDi listening on ws://localhost:60101
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/wv/92383mtd4nlbpv56sj0xnv0m0000gn/T/rust_mozprofiledfh7fR/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1656356162150	Marionette	INFO	Listening on port 60112
+DevTools listening on ws://localhost:60101/devtools/browser/88f60a5c-386a-4c11-b4f3-46603801538e
+Read port: 60112
+1656356162207	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+JavaScript warning: https://www.etsy.com/ac/evergreenVendor/js/en-US/app-shell/globals/index.f832d18e6f7b43a135d4.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.etsy.com"
+1656356182237	Marionette	INFO	Stopped listening on port 60112
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1656356216001	geckodriver	INFO	Listening on 127.0.0.1:60194
+1656356216007	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--width=834" "--height=1194" "--remote-debugging-port" "60195" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/wv/92383mtd4nlbpv56sj0xnv0m0000gn/T/rust_mozprofileeY0DPJ"
+2022-06-27 21:56:56.279 plugin-container[10496:329013] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-27 21:56:56.279 plugin-container[10496:329013] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1656356216286	Marionette	INFO	Marionette enabled
+2022-06-27 21:56:56.300 plugin-container[10496:329013] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-27 21:56:56.300 plugin-container[10496:329013] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-06-27 21:56:56.301 plugin-container[10496:329011] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-27 21:56:56.301 plugin-container[10496:329011] nil host used in call to allowsAnyHTTPSCertificateForHost:
+WebDriver BiDi listening on ws://localhost:60195
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/wv/92383mtd4nlbpv56sj0xnv0m0000gn/T/rust_mozprofileeY0DPJ/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1656356217066	Marionette	INFO	Listening on port 60206
+DevTools listening on ws://localhost:60195/devtools/browser/197a9661-0dc3-4308-9736-10f7c9dc2a6c
+Read port: 60206
+1656356217167	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+JavaScript warning: https://www.etsy.com/ac/primary/js/en-US/app-shell/globals/index.cdc4c1b302cda0ac9432.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.etsy.com/ac/primary/js/en-US/app-shell/globals/index.cdc4c1b302cda0ac9432.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.etsy.com/ac/primary/js/en-US/app-shell/globals/index.cdc4c1b302cda0ac9432.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.etsy.com/ac/primary/js/en-US/app-shell/globals/index.cdc4c1b302cda0ac9432.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.etsy.com"
+1656356230631	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript warning: https://www.etsy.com/ac/primary/js/en-US/app-shell/globals/index.cdc4c1b302cda0ac9432.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1656356234022	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript warning: https://www.etsy.com/ac/primary/js/en-US/app-shell/globals/index.cdc4c1b302cda0ac9432.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.etsy.com/ac/primary/js/en-US/app-shell/globals/index.cdc4c1b302cda0ac9432.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.etsy.com"
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 596"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:596:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 596, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 596: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 596"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:596:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 596, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 596: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+1656356299585	geckodriver	INFO	Listening on 127.0.0.1:60309
+1656356300102	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--width=834" "--height=1194" "--remote-debugging-port" "60310" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/wv/92383mtd4nlbpv56sj0xnv0m0000gn/T/rust_mozprofileiPF6hs"
+2022-06-27 21:58:20.400 plugin-container[10534:329927] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-27 21:58:20.400 plugin-container[10534:329927] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1656356300405	Marionette	INFO	Marionette enabled
+2022-06-27 21:58:20.419 plugin-container[10534:329927] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-27 21:58:20.420 plugin-container[10534:329927] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-06-27 21:58:20.420 plugin-container[10534:329922] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-27 21:58:20.420 plugin-container[10534:329922] nil host used in call to allowsAnyHTTPSCertificateForHost:
+WebDriver BiDi listening on ws://localhost:60310
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/wv/92383mtd4nlbpv56sj0xnv0m0000gn/T/rust_mozprofileiPF6hs/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1656356301128	Marionette	INFO	Listening on port 60323
+Read port: 60323
+1656356301152	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://localhost:60310/devtools/browser/2417f6d6-0e4f-49d7-b319-1f91ceed01ff
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+JavaScript warning: https://www.etsy.com/ac/primary/js/en-US/app-shell/globals/index.cdc4c1b302cda0ac9432.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.etsy.com/ac/primary/js/en-US/app-shell/globals/index.cdc4c1b302cda0ac9432.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.etsy.com/ac/primary/js/en-US/app-shell/globals/index.cdc4c1b302cda0ac9432.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.etsy.com/ac/primary/js/en-US/app-shell/globals/index.cdc4c1b302cda0ac9432.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.etsy.com"
+1656356312760	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript warning: https://www.etsy.com/ac/primary/js/en-US/app-shell/globals/index.cdc4c1b302cda0ac9432.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1656356316861	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript warning: https://www.etsy.com/ac/primary/js/en-US/app-shell/globals/index.cdc4c1b302cda0ac9432.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.etsy.com/ac/primary/js/en-US/app-shell/globals/index.cdc4c1b302cda0ac9432.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1656356331405	geckodriver	INFO	Listening on 127.0.0.1:60410
+1656356331921	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--width=834" "--height=1194" "--remote-debugging-port" "60411" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/wv/92383mtd4nlbpv56sj0xnv0m0000gn/T/rust_mozprofile0kYUJZ"
+2022-06-27 21:58:52.211 plugin-container[10550:331141] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-27 21:58:52.211 plugin-container[10550:331141] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-06-27 21:58:52.214 plugin-container[10550:331141] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-27 21:58:52.214 plugin-container[10550:331141] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-06-27 21:58:52.214 plugin-container[10550:331139] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-27 21:58:52.214 plugin-container[10550:331139] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1656356332218	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:60411
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/wv/92383mtd4nlbpv56sj0xnv0m0000gn/T/rust_mozprofile0kYUJZ/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1656356332973	Marionette	INFO	Listening on port 60424
+DevTools listening on ws://localhost:60411/devtools/browser/152456ef-a171-406c-bb6c-02daccac3af0
+Read port: 60424
+1656356333074	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+JavaScript warning: https://www.etsy.com/ac/primary/js/en-US/app-shell/globals/index.cdc4c1b302cda0ac9432.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1656356340091	Marionette	INFO	Stopped listening on port 60424
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1656356345228	geckodriver	INFO	Listening on 127.0.0.1:60508
+1656356345233	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--width=834" "--height=1194" "--remote-debugging-port" "60509" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/wv/92383mtd4nlbpv56sj0xnv0m0000gn/T/rust_mozprofile5SvfIS"
+2022-06-27 21:59:05.527 plugin-container[10566:331849] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-27 21:59:05.527 plugin-container[10566:331849] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-06-27 21:59:05.529 plugin-container[10566:331849] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-27 21:59:05.529 plugin-container[10566:331849] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-06-27 21:59:05.530 plugin-container[10566:331847] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-27 21:59:05.530 plugin-container[10566:331847] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1656356345534	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:60509
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/wv/92383mtd4nlbpv56sj0xnv0m0000gn/T/rust_mozprofile5SvfIS/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1656356346259	Marionette	INFO	Listening on port 60520
+Read port: 60520
+1656356346275	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://localhost:60509/devtools/browser/29765cca-7e2f-46cf-acb4-5c8f2fcf1be9
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+JavaScript warning: https://www.etsy.com/ac/primary/js/en-US/app-shell/globals/index.cdc4c1b302cda0ac9432.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.etsy.com"
+1656356359410	Marionette	INFO	Stopped listening on port 60520
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 596"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:596:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 596, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 596: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 596"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:596:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 596, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 596: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+2022-06-27 21:59:55.138 firefox-bin[10533:329844] NSVisualEffectView subclass says YES to allowsVibrancy. NSVisualEffectView does not support being vibrantly blended *itself*. This may break in the future.
+console.error: (new TypeError("topBrowsingContext is null", "resource://devtools/server/actors/watcher/browsing-context-helpers.jsm", 352))
+JavaScript error: resource://devtools/server/actors/watcher/browsing-context-helpers.jsm, line 352: TypeError: topBrowsingContext is null
+console.error: (new TypeError("topBrowsingContext is null", "resource://devtools/server/actors/watcher/browsing-context-helpers.jsm", 352))
+TypeError: topBrowsingContext is null: getAllBrowsingContextsForContext@resource://devtools/server/actors/watcher/browsing-context-helpers.jsm:352:7
+get windows@resource://devtools/server/actors/resources/utils/parent-process-storage.js:345:39
+get hosts@resource://devtools/server/actors/storage.js:160:34
+onWindowDestroyed@resource://devtools/server/actors/storage.js:319:20
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+observe@resource://devtools/server/actors/resources/utils/parent-process-storage.js:441:12
+
+console.error: (new TypeError("topBrowsingContext is null", "resource://devtools/server/actors/watcher/browsing-context-helpers.jsm", 352))
+TypeError: topBrowsingContext is null: getAllBrowsingContextsForContext@resource://devtools/server/actors/watcher/browsing-context-helpers.jsm:352:7
+get windows@resource://devtools/server/actors/resources/utils/parent-process-storage.js:345:39
+get hosts@resource://devtools/server/actors/storage.js:160:34
+onWindowDestroyed@resource://devtools/server/actors/storage.js:319:20
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+observe@resource://devtools/server/actors/resources/utils/parent-process-storage.js:441:12
+
+console.error: (new TypeError("topBrowsingContext is null", "resource://devtools/server/actors/watcher/browsing-context-helpers.jsm", 352))
+TypeError: topBrowsingContext is null: getAllBrowsingContextsForContext@resource://devtools/server/actors/watcher/browsing-context-helpers.jsm:352:7
+get windows@resource://devtools/server/actors/resources/utils/parent-process-storage.js:345:39
+get hosts@resource://devtools/server/actors/storage.js:160:34
+onWindowDestroyed@resource://devtools/server/actors/storage.js:319:20
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+observe@resource://devtools/server/actors/resources/utils/parent-process-storage.js:441:12
+
+console.error: (new TypeError("topBrowsingContext is null", "resource://devtools/server/actors/watcher/browsing-context-helpers.jsm", 352))
+TypeError: topBrowsingContext is null: getAllBrowsingContextsForContext@resource://devtools/server/actors/watcher/browsing-context-helpers.jsm:352:7
+get windows@resource://devtools/server/actors/resources/utils/parent-process-storage.js:345:39
+get hosts@resource://devtools/server/actors/storage.js:160:34
+onWindowDestroyed@resource://devtools/server/actors/storage.js:319:20
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+observe@resource://devtools/server/actors/resources/utils/parent-process-storage.js:441:12
+
+console.error: (new TypeError("topBrowsingContext is null", "resource://devtools/server/actors/watcher/browsing-context-helpers.jsm", 352))
+TypeError: topBrowsingContext is null: getAllBrowsingContextsForContext@resource://devtools/server/actors/watcher/browsing-context-helpers.jsm:352:7
+get windows@resource://devtools/server/actors/resources/utils/parent-process-storage.js:345:39
+get hosts@resource://devtools/server/actors/storage.js:160:34
+onWindowDestroyed@resource://devtools/server/actors/storage.js:319:20
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+observe@resource://devtools/server/actors/resources/utils/parent-process-storage.js:441:12
+
+console.error: (new TypeError("topBrowsingContext is null", "resource://devtools/server/actors/watcher/browsing-context-helpers.jsm", 352))
+TypeError: topBrowsingContext is null: getAllBrowsingContextsForContext@resource://devtools/server/actors/watcher/browsing-context-helpers.jsm:352:7
+get windows@resource://devtools/server/actors/resources/utils/parent-process-storage.js:345:39
+get hosts@resource://devtools/server/actors/storage.js:160:34
+onWindowDestroyed@resource://devtools/server/actors/storage.js:319:20
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+observe@resource://devtools/server/actors/resources/utils/parent-process-storage.js:441:12
+
+console.error: (new TypeError("topBrowsingContext is null", "resource://devtools/server/actors/watcher/browsing-context-helpers.jsm", 352))
+TypeError: topBrowsingContext is null: getAllBrowsingContextsForContext@resource://devtools/server/actors/watcher/browsing-context-helpers.jsm:352:7
+get windows@resource://devtools/server/actors/resources/utils/parent-process-storage.js:345:39
+get hosts@resource://devtools/server/actors/storage.js:160:34
+onWindowDestroyed@resource://devtools/server/actors/storage.js:319:20
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+observe@resource://devtools/server/actors/resources/utils/parent-process-storage.js:441:12
+
+console.error: (new TypeError("topBrowsingContext is null", "resource://devtools/server/actors/watcher/browsing-context-helpers.jsm", 352))
+TypeError: topBrowsingContext is null: getAllBrowsingContextsForContext@resource://devtools/server/actors/watcher/browsing-context-helpers.jsm:352:7
+get windows@resource://devtools/server/actors/resources/utils/parent-process-storage.js:345:39
+get hosts@resource://devtools/server/actors/storage.js:160:34
+onWindowDestroyed@resource://devtools/server/actors/storage.js:319:20
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+observe@resource://devtools/server/actors/resources/utils/parent-process-storage.js:441:12
+
+console.error: (new TypeError("topBrowsingContext is null", "resource://devtools/server/actors/watcher/browsing-context-helpers.jsm", 352))
+TypeError: topBrowsingContext is null: getAllBrowsingContextsForContext@resource://devtools/server/actors/watcher/browsing-context-helpers.jsm:352:7
+get windows@resource://devtools/server/actors/resources/utils/parent-process-storage.js:345:39
+get hosts@resource://devtools/server/actors/storage.js:160:34
+onWindowDestroyed@resource://devtools/server/actors/storage.js:319:20
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+observe@resource://devtools/server/actors/resources/utils/parent-process-storage.js:441:12
+
+console.error: (new TypeError("topBrowsingContext is null", "resource://devtools/server/actors/watcher/browsing-context-helpers.jsm", 352))
+TypeError: topBrowsingContext is null: getAllBrowsingContextsForContext@resource://devtools/server/actors/watcher/browsing-context-helpers.jsm:352:7
+get windows@resource://devtools/server/actors/resources/utils/parent-process-storage.js:345:39
+get hosts@resource://devtools/server/actors/storage.js:160:34
+onWindowDestroyed@resource://devtools/server/actors/storage.js:319:20
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+observe@resource://devtools/server/actors/resources/utils/parent-process-storage.js:441:12
+
+console.error: (new TypeError("topBrowsingContext is null", "resource://devtools/server/actors/watcher/browsing-context-helpers.jsm", 352))
+TypeError: topBrowsingContext is null: getAllBrowsingContextsForContext@resource://devtools/server/actors/watcher/browsing-context-helpers.jsm:352:7
+get windows@resource://devtools/server/actors/resources/utils/parent-process-storage.js:345:39
+get hosts@resource://devtools/server/actors/storage.js:160:34
+onWindowDestroyed@resource://devtools/server/actors/storage.js:319:20
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+observe@resource://devtools/server/actors/resources/utils/parent-process-storage.js:441:12
+
+console.error: (new TypeError("topBrowsingContext is null", "resource://devtools/server/actors/watcher/browsing-context-helpers.jsm", 352))
+TypeError: topBrowsingContext is null: getAllBrowsingContextsForContext@resource://devtools/server/actors/watcher/browsing-context-helpers.jsm:352:7
+get windows@resource://devtools/server/actors/resources/utils/parent-process-storage.js:345:39
+get hosts@resource://devtools/server/actors/storage.js:160:34
+onWindowDestroyed@resource://devtools/server/actors/storage.js:319:20
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+observe@resource://devtools/server/actors/resources/utils/parent-process-storage.js:441:12
+
+console.error: (new TypeError("topBrowsingContext is null", "resource://devtools/server/actors/watcher/browsing-context-helpers.jsm", 352))
+TypeError: topBrowsingContext is null: getAllBrowsingContextsForContext@resource://devtools/server/actors/watcher/browsing-context-helpers.jsm:352:7
+get windows@resource://devtools/server/actors/resources/utils/parent-process-storage.js:345:39
+get hosts@resource://devtools/server/actors/storage.js:160:34
+onWindowDestroyed@resource://devtools/server/actors/storage.js:319:20
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+observe@resource://devtools/server/actors/resources/utils/parent-process-storage.js:441:12
+
+console.error: (new TypeError("topBrowsingContext is null", "resource://devtools/server/actors/watcher/browsing-context-helpers.jsm", 352))
+TypeError: topBrowsingContext is null: getAllBrowsingContextsForContext@resource://devtools/server/actors/watcher/browsing-context-helpers.jsm:352:7
+get windows@resource://devtools/server/actors/resources/utils/parent-process-storage.js:345:39
+get hosts@resource://devtools/server/actors/storage.js:160:34
+onWindowDestroyed@resource://devtools/server/actors/storage.js:319:20
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+observe@resource://devtools/server/actors/resources/utils/parent-process-storage.js:441:12
+
+console.error: (new TypeError("topBrowsingContext is null", "resource://devtools/server/actors/watcher/browsing-context-helpers.jsm", 352))
+TypeError: topBrowsingContext is null: getAllBrowsingContextsForContext@resource://devtools/server/actors/watcher/browsing-context-helpers.jsm:352:7
+get windows@resource://devtools/server/actors/resources/utils/parent-process-storage.js:345:39
+get hosts@resource://devtools/server/actors/storage.js:160:34
+onWindowDestroyed@resource://devtools/server/actors/storage.js:319:20
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+observe@resource://devtools/server/actors/resources/utils/parent-process-storage.js:441:12
+
+console.error: (new TypeError("topBrowsingContext is null", "resource://devtools/server/actors/watcher/browsing-context-helpers.jsm", 352))
+TypeError: topBrowsingContext is null: getAllBrowsingContextsForContext@resource://devtools/server/actors/watcher/browsing-context-helpers.jsm:352:7
+get windows@resource://devtools/server/actors/resources/utils/parent-process-storage.js:345:39
+get hosts@resource://devtools/server/actors/storage.js:160:34
+onWindowDestroyed@resource://devtools/server/actors/storage.js:319:20
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+observe@resource://devtools/server/actors/resources/utils/parent-process-storage.js:441:12
+
+console.error: (new TypeError("topBrowsingContext is null", "resource://devtools/server/actors/watcher/browsing-context-helpers.jsm", 352))
+1656356418946	Marionette	INFO	Stopped listening on port 60323
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1656356421127	Marionette	INFO	Stopped listening on port 60206
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+

@@ -68,7 +68,7 @@ def test_Invalid_Email(driver):
     invalid_message = driver.find_element(By.CSS_SELECTOR, "#aria-join_neu_email_field-error")
     err_invalid = invalid_message.text
     assert "Email address is invalid." == err_invalid
-    time.sleep(5)
+
 
 
 def test_mandatory_message(driver):
@@ -85,7 +85,7 @@ def test_mandatory_message(driver):
     err_message = driver.find_element(By.CSS_SELECTOR, "#aria-join_neu_first_name_field-error")
     err_text = err_message.text
     assert "First name can't be blank." == err_text
-    time.sleep(1)
+
 
 
 def test_incorect_values(driver):
@@ -137,7 +137,7 @@ def test_search_product(driver):
     time.sleep(2)
     txt = driver.find_element(By.CSS_SELECTOR, "h1.wt-text-body-03").text
     assert txt == name
-    time.sleep(2)
+
 
 
 def test_buy_product(driver):
@@ -184,7 +184,7 @@ def test_buy_product(driver):
     driver.find_element(By.ID, "zip21-input").send_keys("2020000")
     time.sleep(2)
     driver.find_element(By.CSS_SELECTOR,"#shipping-address-form > div.wt-pl-xs-2.wt-pr-xs-2.wt-pl-md-0.wt-pr-md-0.wt-mt-xs-2 > button").click()
-    time.sleep(3)
+
 
 
 def test_add_to_whishlist(driver):
